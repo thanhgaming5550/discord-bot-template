@@ -1,0 +1,32 @@
+{
+  "name": "discord-bot-template",
+  "version": "0.0.1",
+  "description": "Template for building Discord Bot",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --max-old-space-size=2048 index.js",
+    "start": "npm install && node index.js",
+    "update": "ncu -x node-fetch",
+    "production": "pm2 restart \"npm run start\" --cron-restart=\"0 23 * * *\""
+  },
+  "author": "thanhgaming5550",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thanhgaming5550/discord-bot-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanhgaming5550/discord-bot-template"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.37.21",
+    "discord-together": "^1.3.31",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "log-timestamp": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=16.10.0"
+  }
+}

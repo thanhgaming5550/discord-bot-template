@@ -1,0 +1,13 @@
+{
+    "prefix": ">",
+    "source": {
+        "textCommand": {
+            "enabled": true,
+            "path": "command/text"
+        },
+        "slashCommand": {
+            "enabled": true,
+            "path": "command/slash"
+        }
+    }
+}
